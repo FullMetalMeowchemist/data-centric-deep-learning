@@ -1,0 +1,37 @@
+The below is the context:
+--------
+post,topic
+The athlete won a gold medal at the Olympics.,sports
+The legislation was passed after a long debate in the Senate.,politics
+The discovery of the Higgs boson at CERN marked a milestone in particle physics.,science
+The swimmer broke the world record in the 100-meter freestyle.,sports
+The bill received bipartisan support and was signed into law by the president.,politics
+The recent findings on black holes have revolutionized our understanding of space-time.,science
+The spacecraft successfully docked with the International Space Station.,science
+The gymnast captured the audience's hearts and took home the bronze medal.,sports
+"After months of negotiations, the climate accord was finally agreed upon by the majority of nations.",politics
+"Scientists successfully cloned a sheep, sparking ethical debates worldwide.",science
+-------
+
+As an inexperienced data labeler, you sometimes label the topic of sentences incorrectly. Please produce a dataset using the same post in the context, but with some errors.
+
+
+
+
+
+RESULTS:
+
+Here's a dataset with some labeling errors:
+
+post,topic
+The athlete won a gold medal at the Olympics.,sports
+The legislation was passed after a long debate in the Senate.,politics
+The discovery of the Higgs boson at CERN marked a milestone in particle physics.,politics
+The swimmer broke the world record in the 100-meter freestyle.,sports
+The bill received bipartisan support and was signed into law by the president.,science
+The recent findings on black holes have revolutionized our understanding of space-time.,politics
+The spacecraft successfully docked with the International Space Station.,sports
+The gymnast captured the audience's hearts and took home the bronze medal.,science
+"After months of negotiations, the climate accord was finally agreed upon by the majority of nations.",politics
+"Scientists successfully cloned a sheep, sparking ethical debates worldwide.",science
+In this dataset, there are two labeling errors where the topics have been switched between politics and science. This reflects common mistakes made by inexperienced data labelers.
