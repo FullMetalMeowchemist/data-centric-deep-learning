@@ -89,9 +89,10 @@ class DigitClassifierFlow(FlowSpec):
     # manually propagate class variables through but we only
     # need a few of them so no need to call `merge_artifacts`
     self.dm = inputs[0].dm
+    pprint(input)
 
-    scores = []        # populate with scores from each hparams
-    best_index = None  # replace with best index
+    scores = [input for input in inputs]        # populate with scores from each hparams
+    best_index = scores.index(self.callback.best_model_score)  # replace with best index
     
     # ================================
     # FILL ME OUT

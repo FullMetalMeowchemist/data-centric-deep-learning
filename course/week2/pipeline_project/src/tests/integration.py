@@ -48,6 +48,8 @@ class MNISTIntegrationTest(BaseTest):
     return loader
 
   def test(self, trainer, system):
+    dataloader = self.get_dataloader()
+    trainer.test(dataloaders=dataloader)
     # ================================
     # FILL ME OUT
     #

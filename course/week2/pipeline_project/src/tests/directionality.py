@@ -147,8 +147,9 @@ class MNISTDirectionalityTest(BaseTest):
       logits_transformed = system.predict_step(image_transformed)
       preds_raw = torch.argmax(logits_raw, dim=1)
       preds_transformed = torch.argmax(logits_transformed, dim=1)
-
-      batch_metric = 0  # store metric here
+      
+      match_list = [t.item() for t in preds_transformed == preds_raw]
+      batch_metric = float((len(match_list)-len(set(match_list)))/len(match_list))  # store metric here
       # ================================
       # FILL ME OUT
       # 
